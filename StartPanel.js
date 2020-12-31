@@ -1,16 +1,16 @@
 function st_start(){
   mp.level = 1;
   mp.ctx.clearRect(0,0, mp.canvas.width, mp.canvas.height);
-  mp.ctx.font = "40px 'Times New Roman'";
-  mp.ctx.textBaseline = "middle";
-  mp.ctx.textAlign = "center";
-  mp.ctx.fillStyle = "rgb(0, 0, 0)";
-  mp.ctx.fillText("Puzzle", mp.canvas.width/2, mp.canvas.height/2-100);
-  mp.ctx.fillText("GAME START", mp.canvas.width/2, mp.canvas.height/2+100);
+  var gametitle = new Image();
+  gametitle.src = "gametitle.png";
+  gametitle.onload = function(){
+    mp.ctx.drawImage(gametitle,0,0);
+  }
 
   gamestarted = 0;
   gamecleared = 0;
   mp.canvas.addEventListener("click", mouseClick_start);
+
   /*
   document.getElementById("method").style.display = "";
   document.getElementById("start").style.display = "";
