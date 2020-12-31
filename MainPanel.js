@@ -17,14 +17,6 @@ class MainPanel {
   }
   finish() {
     mp.ctx.clearRect(0, 0, mp.canvas.width, mp.canvas.height);
-    /*
-    document.getElementById("method").style.display = "none";
-    document.getElementById("start").style.display = "none";
-    document.getElementById("clear").style.display = "none";
-    document.getElementById("over").style.display = "none";
-    document.getElementById("first").style.display = "none";
-    document.getElementById("finish").style.display = "none";
-    */
   }
 }
 

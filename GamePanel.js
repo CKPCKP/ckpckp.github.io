@@ -9,12 +9,6 @@ function gp_start(){
 
   mp.canvas.addEventListener("click", gp.mouseClick);
   return 0;
-  /*
-  document.getElementById("method").style.display = "none";
-  document.getElementById("start").style.display = "none";
-  document.getElementById("first").style.display = "none";
-  document.getElementById("finish").style.display = "none";
-  */
 }
 class GamePanel {
   constructor() {
