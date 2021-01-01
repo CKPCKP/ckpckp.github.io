@@ -5,7 +5,7 @@ function gp_start(){
   gamestarted = 1;
   gamecleared = 0;
 
-  let timerID = setTimeout("gp.draw()", 100);
+  let timerID = setTimeout("gp.draw()", 1000);
 
   mp.canvas.addEventListener("click", gp.mouseClick);
   return 0;

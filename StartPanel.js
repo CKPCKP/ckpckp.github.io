@@ -15,6 +15,7 @@ function st_start(){
 function mouseClick_start(event){
   if (gamestarted == 0){
     mp.ctx.clearRect(0, 0, mp.canvas.width, mp.canvas.height);
+    mp.canvas.removeEventListener("click", mouseClick_start);
     gp_start();
   }
   gamestarted = 1;
